@@ -1,5 +1,6 @@
 import profilePic from "../assets/ffraju.jfif";
-import { delay, motion } from "framer-motion"
+import { delay, motion } from "framer-motion";
+import ress from '../assets/portresume.pdf';
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -21,7 +22,7 @@ const Hero = () => {
                             variants={container(0)}
                             initial="hidden"
                             animate="visible"
-                            className="pb-16 ml-10 text-4 xl font-thin tracking-tight font-serif lg:mt-16 lg:text-6xl first-letter:text-cyan-300">R 
+                            className="pb-16 ml-10 text-4xl font-thin tracking-tight font-serif lg:mt-16 lg:text-6xl first-letter:text-cyan-300">R 
                             <span className="text-black">aja Ravivarman</span> </motion.h1>
                         <motion.span
                             variants={container(0.5)}
@@ -40,7 +41,7 @@ const Hero = () => {
                                 Recent graduate with a degree in Computer Science and a solid foundation in Java development. As a Java Developer fresher, I aim to join a collaborative team where I can apply my knowledge of Java and contribute to the successful delivery of innovative software solutions while continuously improving my technical skills.
 
                         </motion.p>
-                        <button className="mx-60 border-2 bg-white text-black p-3 rounded-3xl font-sans hover:bg-slate-600 hover:text-white"> Download Resume</button>
+                        <button className="mx-60 border-2 bg-white text-black p-3 rounded-3xl font-sans hover:bg-slate-600 hover:text-white">  <a href={ress} download >Download Resume</a></button>
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-16 ">
